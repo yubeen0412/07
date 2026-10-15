@@ -1,14 +1,17 @@
 #include <stdio.h>
 
-int main(void)
-{
-    int i;
+int inc(int counter);
 
-    for(i=0;i<5;i++)
-    {
-        int temp =1;
-        printf("temp=%d\n",temp);
-        temp++;
-    }
+int main (void)
+{
+    int i = 10;
+    printf("before i =%d\n", i);
+    inc(i);
+    printf("after i=%d\n", i);
     return 0;
+}
+int inc(int counter)
+{
+    counter++;
+    return counter;
 }
