@@ -1,9 +1,9 @@
 #include <stdio.h>
 void f(void);
 
-int i;
 int main(void)
 {
+    int i;
     for (i=0; i<10; i++)
     {
         f();
@@ -13,6 +13,7 @@ int main(void)
 
 void f(void)
 {
+    int i;
     for(i=0; i<10;i++)
         printf("#");
 }
